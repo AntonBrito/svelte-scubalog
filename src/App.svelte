@@ -11,7 +11,9 @@
 <div class="container">
 	<div class="card">
 		<h1>{name}</h1>
-		<button class="btn btn-sm" on:click={toggleControls}>+</button> 
+		<button class="btn btn-sm" on:click={toggleControls}>
+			{#if showControls}-{:else}+{/if}
+		</button> 
 		<h3>Location:{locationName}</h3>
 		<h3>Depth:{depths}Ft</h3>
 		{#if showControls}
