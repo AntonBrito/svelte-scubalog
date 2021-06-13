@@ -7,17 +7,17 @@ import Diver from "./Diver.svelte";
 		{
 			name: "Anton",
 			location: "KeyWest, FL",
-			depth: 12,
+			depths: 12,
 		},
 		{
 			name: "Riley",
 			location: "Jamestown, RI",
-			depth: 20,
+			depths: 20,
 		},
 		{
 			name: "Belmas",
 			location: "QuebraCanela, CapeVerde",
-			depth: 12,
+			depths: 12,
 		},
 
 	];

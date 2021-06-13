@@ -1,6 +1,6 @@
 <script>
 	export let name;
-	export let locationName;
+	export let location;
 	export let depths;
 	let showControls = false
 
@@ -13,7 +13,7 @@
 		<button class="btn btn-sm" on:click={toggleControls}>
 			{#if showControls}-{:else}+{/if}
 		</button> 
-		<h3>Location:{locationName}</h3>
+		<h3>Location:{location}</h3>
 		<h3>Depth:{depths}Ft</h3>
 		{#if showControls}
 		<button class="btn" on:click={addDepth}>+1</button>
