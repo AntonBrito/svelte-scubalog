@@ -1,7 +1,7 @@
 <script>
-	let name = "Anton";
-	let locationName = "KeyWest FL";
-	let depths = 30;
+	export let name;
+	export let locationName;
+	export let depths;
 	let showControls = false
 
 	const addDepth = () => (depths += 1);

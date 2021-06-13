@@ -1,6 +1,7 @@
 <script>
 	import Navbar from "./Navbar.svelte";
 	import Divers from "./Diver.svelte";
+import Diver from "./Diver.svelte";
 
 	let divers = [
 		{
@@ -27,7 +28,10 @@
 		<p>No Dives Today</p>
 		{:else}
 			{#each divers as diver}
-				<Divers />
+				<Diver 
+				name={diver.name}
+				location={diver.location}
+				depths={diver.depths} />
 			{/each}
 	{/if}
 </div>
