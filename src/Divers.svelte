@@ -1,8 +1,4 @@
 <script>
-	import Navbar from "./Navbar.svelte";
-	import Divers from "./Divers.svelte";
-
-
 	let name = "Anton";
 	let locationName = "KeyWest FL";
 	let depths = 30;
@@ -10,11 +6,8 @@
 
 	const addDepth = () => (depths += 1);
 	const removeDepth = () => (depths -= 1);
-	const toggleControls = () => (showControls = !showControls);
-
+	const toggleControls = () => (showControls = !showControls); 
 </script>
-<Navbar />
-<div class="container">
 	<div class="card">
 		<h1>{name}</h1>
 		<button class="btn btn-sm" on:click={toggleControls}>
@@ -28,7 +21,6 @@
 		<input type="number" bind:value={depths} />
 		{/if}
 	</div>
-</div>
 <style>
 	h1 {
 		color: #333333;
