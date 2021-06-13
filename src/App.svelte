@@ -1,4 +1,6 @@
 <script>
+	import Navbar from "./Navbar.svelte";
+
 	let name = "Anton";
 	let locationName = "KeyWest FL";
 	let depths = 30;
@@ -8,6 +10,7 @@
 	const removeDepth = () => (depths -= 1);
 	const toggleControls = () => (showControls = !showControls); 
 </script>
+<Navbar />
 <div class="container">
 	<div class="card">
 		<h1>{name}</h1>
