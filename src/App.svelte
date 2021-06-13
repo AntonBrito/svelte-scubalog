@@ -21,4 +21,8 @@
 	h1 {
 		color: #333333;
 	}
+
+	h3 {
+		margin-bottom: 10px;;
+	}
 </style>
