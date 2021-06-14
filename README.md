@@ -8,15 +8,15 @@ This is a project where users can create logs for daily dives. Its a web-applica
 
 ## User Story
  - A user can create a new dive by:
-              - Diver's name, 
-                  - Location name, Depth 0 - 100 Ft
-          - A user can delete  dive; 
+      - Diver's name, 
+          - Location name, Depth 0 - 100 Ft
+ - A user can delete  dive; 
 
 
 
 ### Feature for the Future
  - A user can add a budy-diver to a dive-log 
-         - A user can add water temperature; 
+- A user can add water temperature; 
 
 
 
