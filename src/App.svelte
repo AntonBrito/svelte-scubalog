@@ -18,13 +18,18 @@
 			name: "Belmas",
 			location: "QuebraCanela, CapeVerde",
 			depths: 12,
-		},
-
+		}
 	];
+	const addDiver = (e) => {
+		const newDiver = e.detail;
+		divers = [...divers, newDiver];
+	}
+
 </script>
+
 <Navbar />
 <div class="container">
-	<AddDiver />
+	<AddDiver on:adddiver={addDiver}/>
 	{#if divers.length === 0}
 		<p>No Dives Today</p>
 		{:else}
