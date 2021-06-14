@@ -25,6 +25,9 @@
 		divers = [...divers, newDiver];
 	}
 
+	const removeDiver = (e) => {
+		divers = divers.filter(diver => diver.name !== e.detail)
+	}
 </script>
 
 <Navbar />
@@ -37,7 +40,9 @@
 				<Diver 
 				name={diver.name}
 				location={diver.location}
-				depths={diver.depths} />
+				depths={diver.depths} 
+				on:removeDiver={removeDiver} 
+				/>
 			{/each}
 	{/if}
 </div>

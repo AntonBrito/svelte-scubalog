@@ -1,4 +1,8 @@
 <script>
+	import { createEventDispatcher } from "svelte";
+
+  const dispatch = createEventDispatcher();
+
 	export let name;
 	export let location;
 	export let depths;
@@ -7,12 +11,14 @@
 	const addDepth = () => (depths += 1);
 	const removeDepth = () => (depths -= 1);
 	const toggleControls = () => (showControls = !showControls); 
+	const onDelete = () => dispatch("removeDiver", name);
 </script>
 	<div class="card">
 		<h1>{name}</h1>
 		<button class="btn btn-sm" on:click={toggleControls}>
 			{#if showControls}-{:else}+{/if}
 		</button> 
+		<button class="btn btn-danger btn-sm" on:click={onDelete}>x</button>
 		<h3>Location:{location}</h3>
 		<h3>Depth:{depths}Ft</h3>
 		{#if showControls}
