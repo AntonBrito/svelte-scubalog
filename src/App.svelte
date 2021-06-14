@@ -1,7 +1,7 @@
 <script>
 	import Navbar from "./Navbar.svelte";
-	import Divers from "./Diver.svelte";
-import Diver from "./Diver.svelte";
+	import Diver from "./Diver.svelte";
+  import AddDiver from "./AddDiver.svelte";
 
 	let divers = [
 		{
@@ -24,6 +24,7 @@ import Diver from "./Diver.svelte";
 </script>
 <Navbar />
 <div class="container">
+	<AddDiver />
 	{#if divers.length === 0}
 		<p>No Dives Today</p>
 		{:else}
